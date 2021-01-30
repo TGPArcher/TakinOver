@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=47;
+		nextID=49;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3941.3303,382.46582,5553.3682};
-		dir[]={-0.1649047,-0.57553637,-0.80109167};
-		up[]={-0.11604887,0.81775397,-0.56374991};
-		aside[]={-0.97955632,-6.1559695e-007,0.20163837};
+		pos[]={13985.996,40.976936,2944.6318};
+		dir[]={-0.46947551,-0.49277696,-0.7326858};
+		up[]={-0.26595914,0.87004596,-0.4150691};
+		aside[]={-0.84200621,-1.3737008e-007,0.53952265};
 	};
 };
 binarizationWanted=0;
@@ -274,7 +274,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			dataType="Logic";
@@ -2495,7 +2495,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3929.6299,310.14426,5468.7778};
+						position[]={13979.243,26.104998,2928.3237};
 					};
 					side="West";
 					flags=7;
@@ -2559,6 +2559,7 @@ class Mission
 					};
 					id=44;
 					type="B_G_Survivor_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2607,6 +2608,7 @@ class Mission
 			{
 			};
 			id=43;
+			atlOffset=1.5258789e-005;
 		};
 		class Item12
 		{
@@ -2620,7 +2622,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3945.803,311.03104,5468.2666};
+						position[]={13974.841,26.449539,2928.8335};
 					};
 					side="West";
 					flags=7;
@@ -2684,6 +2686,7 @@ class Mission
 					};
 					id=46;
 					type="B_G_Survivor_F";
+					atlOffset=-0.00018882751;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2732,6 +2735,25 @@ class Mission
 			{
 			};
 			id=45;
+			atlOffset=-0.00018882751;
+		};
+		class Item13
+		{
+			dataType="Trigger";
+			position[]={13977.612,26.217737,2928.8999};
+			class Attributes
+			{
+				condition="call{player in thisList;}";
+				onActivation="call{_unit = player; " \n "_newPosition = [nil, [""water""]] call BIS_fnc_randomPos; " \n " " \n "while {(_newPosition distance2D getMarkerPos ""respawn_west"") > 6000} do " \n "{ " \n " _newPosition = [nil, [""water""]] call BIS_fnc_randomPos; " \n "}; " \n " " \n "_unit setPos _newPosition;}";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=47;
+			type="EmptyDetectorArea10x10";
 		};
 	};
 };
