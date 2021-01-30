@@ -1,0 +1,38 @@
+Survivor1
+[[],[],["CUP_hgun_M9","","","",["CUP_15Rnd_9x19_M9",15],[],""],["U_BG_Guerilla1_1",[["FirstAidKit",1],["ACE_Chemlight_White",1,1]]],["rvg_legstrapbag_3",[["CUP_15Rnd_9x19_M9",4,15]]],[],"","",[],["","","","ItemCompass","ItemWatch",""]]
+
+comment "Add weapons";
+this addWeapon "CUP_hgun_Glock17_blk";
+this addHandgunItem "CUP_17Rnd_9x19_glock17";
+
+comment "Add containers";
+this forceAddUniform "U_BG_Guerilla1_1";
+this addVest "V_BandollierB_rgr";
+
+comment "Add items to containers";
+this addItemToUniform "FirstAidKit";
+this addItemToUniform "ACE_Chemlight_White";
+for "_i" from 1 to 4 do {this addItemToVest "CUP_17Rnd_9x19_glock17";};
+
+comment "Add items";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+Survivor2
+[[],[],["CUP_hgun_Glock17_blk","","","",["CUP_17Rnd_9x19_glock17",17],[],""],["U_BG_Guerilla1_1",[["FirstAidKit",1],["ACE_Chemlight_White",1,1]]],["V_BandollierB_rgr",[["CUP_17Rnd_9x19_glock17",4,17]]],[],"","",[],["","","","ItemCompass","ItemWatch",""]]
+comment "Add weapons";
+this addWeapon "CUP_hgun_M9";
+this addHandgunItem "CUP_15Rnd_9x19_M9";
+
+comment "Add containers";
+this forceAddUniform "U_BG_Guerilla1_1";
+this addVest "rvg_legstrapbag_3";
+
+comment "Add items to containers";
+this addItemToUniform "FirstAidKit";
+this addItemToUniform "ACE_Chemlight_White";
+for "_i" from 1 to 4 do {this addItemToVest "CUP_15Rnd_9x19_M9";};
+
+comment "Add items";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
