@@ -1,3 +1,5 @@
+// Handy scripts to use in game console to debug things
+
 Survivor1
 [[],[],["CUP_hgun_M9","","","",["CUP_15Rnd_9x19_M9",15],[],""],["U_BG_Guerilla1_1",[["FirstAidKit",1],["ACE_Chemlight_White",1,1]]],["rvg_legstrapbag_3",[["CUP_15Rnd_9x19_M9",4,15]]],[],"","",[],["","","","ItemCompass","ItemWatch",""]]
 
