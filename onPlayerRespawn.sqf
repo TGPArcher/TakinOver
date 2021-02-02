@@ -10,3 +10,7 @@ _loadout = _unit getVariable ["unit_loadout", [[],[],["CUP_hgun_M9","","","",["C
 
 _unit setPos _newPosition;
 _unit setUnitLoadout _loadout;
+
+
+// Adding action to teleport all players
+_unit addAction ["Bring everybody here", "teleportAll.sqf"];
